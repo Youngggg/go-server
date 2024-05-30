@@ -19,8 +19,6 @@ func (_File) ReadWithIOUtil(path string) []byte {
 		if fi != nil {
 			fi.Close()
 		}
-		//msg := fmt.Sprintf("[ReadWithIOUtil] cost time %v", time.Now().Sub(start))
-		//TaskLogger.Info(msg)
 	}()
 	if err != nil {
 		log.Error(err.Error())
